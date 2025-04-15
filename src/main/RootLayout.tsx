@@ -1,4 +1,5 @@
 import { Box } from "@chakra-ui/react";
+import { WorldWeather } from "src/features/world-weather/Main";
 
 export default function RootLayout() {
   return (
@@ -8,6 +9,8 @@ export default function RootLayout() {
       w="100vw"
       h="100vh"
       overflow="hidden"
-    ></Box>
+    >
+      <WorldWeather />
+    </Box>
   );
 }
