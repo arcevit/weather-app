@@ -1,54 +1,34 @@
-# React + TypeScript + Vite
+# 🌍 WeatherMap — Interactive Weather on Mapbox
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**WeatherMap** is a React-based web application that lets users explore real-time weather data by interacting with a world map powered by Mapbox. Click anywhere on the map to get an instant forecast and toggle between °C and °F. Search for specific locations with ease.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🗺️ **Interactive Map** using Mapbox GL JS
+- 📍 **Click on any location** to view real-time weather
+- 🌤 **Weather data integration** from OpenMeteo API
+- 🔍 **Search bar** to find locations by name
+- 🌡️ **Toggle** between Celsius and Fahrenheit
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🧑‍💻 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **React** (Vite)
+- **Mapbox GL JS** for mapping
+- **OpenMeteo API** for weather data
+- **Axios** for API calls
+- **Chakra UI** for design systems
+- **React Context & @tanstack/react-query** is powerful asynchoronous state management
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 📦 Installation
+
+```bash
+git clone https://github.com/arcevit/weather-app.git
+cd weather-app
+npm install
 ```
