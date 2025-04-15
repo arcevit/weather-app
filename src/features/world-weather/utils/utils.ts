@@ -5,3 +5,16 @@ export function uuid(): string {
     return value.toString(16);
   });
 }
+
+export function debounce<T extends unknown[]>(
+  func: (...args: T) => void,
+  timeout = 300
+) {
+  let timer: number | undefined;
+  return function (this: unknown, ...args: T) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      func.apply(this, args);
+    }, timeout);
+  };
+}

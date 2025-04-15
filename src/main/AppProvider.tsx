@@ -1,6 +1,6 @@
 import React from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Provider as ChakraProvider } from "src/chakra-ui-components/provider";
+import { Provider as ChakraProvider } from "src/chakra-ui-components";
 
 const queryClient = new QueryClient({
   defaultOptions: {
