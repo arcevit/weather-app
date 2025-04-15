@@ -1,5 +1,7 @@
+import RootLayout from "src/main/RootLayout";
+
 function App() {
-  return <></>;
+  return <RootLayout />;
 }
 
 export default App;
